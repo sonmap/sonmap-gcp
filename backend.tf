@@ -4,8 +4,8 @@ terraform{
     }
 
     backend "gcs"{
-        credentials = "/var/lib/jenkins/pjt-an3-gketest-dev-78cdd3d69f38.json"
-        bucket      = "terraform-test-0618"
+        credentials = "/home/sonmap/GCP_TEST/copper-creek-334508-74e1b1ac412a.json"
+        bucket      = "gcs-an3-sonmap-src01"
         prefix      = "jenkins.terraform.tfstate"
     }
 }

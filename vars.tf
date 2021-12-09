@@ -15,5 +15,5 @@ variable "JENKINS_VERSION"{
 }
 
 variable "TERRAFORM_VERSION"{
-    default = "0.12.29"
+    default = "0.12.25"
 }

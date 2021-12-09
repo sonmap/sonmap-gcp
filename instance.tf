@@ -1,8 +1,8 @@
 
 provider "google" {
   version = "3.5.0"
-  credentials = "/var/lib/jenkins/pjt-an3-gketest-dev-78cdd3d69f38.json"
-  project = "pjt-an3-gketest-dev"
+  credentials = "/home/sonmap/GCP_TEST/copper-creek-334508-74e1b1ac412a.json"
+  project = "copper-creek-334508"
   region  = "asia-northeast3"
   zone    = "asia-northeast3-a"
 }
@@ -20,7 +20,7 @@ resource "google_compute_instance" "default" {
 
 
 
-  tags = ["sgtag-jenkins-ssh", "sgtag-jenkins-web","sgtag-jenkins-instance" ]
+  tags = ["sgtag-ssh-22", "icmp", "sgtag-allow-8080-ingress"]
   
   boot_disk {
     initialize_params {
