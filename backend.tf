@@ -4,7 +4,7 @@ terraform{
     }
 
     backend "gcs"{
-        credentials = "C:/key/pjt-an3-gketest-dev-78cdd3d69f38.json"
+        credentials = "/var/lib/jenkins/pjt-an3-gketest-dev-78cdd3d69f38.json"
         bucket      = "terraform-test-0618"
         prefix      = "jenkins.terraform.tfstate"
     }
