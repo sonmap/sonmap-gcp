@@ -1,7 +1,7 @@
 
 provider "google" {
   version = "3.5.0"
-  credentials = "/home/sonmap/GCP_TEST/copper-creek-334508-74e1b1ac412a.json"
+  credentials = "/var/lib/jenkins/copper-creek-334508-74e1b1ac412a.json"
   project = "copper-creek-334508"
   region  = "asia-northeast3"
   zone    = "asia-northeast3-a"
@@ -16,7 +16,7 @@ resource "google_compute_instance" "default" {
   zone         = var.VM_ZONE
 
 
-  metadata_startup_script = data.template_cloudinit_config.cloudinit-jenkins.rendered
+  #metadata_startup_script = data.template_cloudinit_config.cloudinit-jenkins.rendered
 
 
 

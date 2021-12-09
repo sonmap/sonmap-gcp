@@ -1,5 +1,5 @@
 data "template_file" "jenkins-init"{
-    template = file("/home/sonmap/GCP_TEST/vmcreate-terraform/gcp-code.sh")
+    #template = file("/home/sonmap/GCP_TEST/vmcreate-terraform/gcp-code.sh")
 
     vars ={
         JENKINS_VERSION = var.JENKINS_VERSION
