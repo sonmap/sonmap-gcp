@@ -9,7 +9,7 @@
 
       stage('Git Checkout') {
         steps {
-          git branch: 'main', credentialsId: 'gkfka133', url: 'https://github.com/PARKHARAM/vmcreate-terraform' 
+          git branch: 'main', credentialsId: 'sonmap', url: 'https://github.com/sonmap/sonmap-gcp' 
          
         }      
       }
